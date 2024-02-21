@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Filter } from './components/Filter';
 import { QRcode } from './components/QRcode';
-import { locations } from './locations.js';
+import { locations } from './data/locations.js';
 
 function App() {
   const [filters, setFilters] = useState([]);
