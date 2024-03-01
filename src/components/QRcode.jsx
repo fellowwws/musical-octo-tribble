@@ -1,9 +1,9 @@
-export function QRcode({ label }) {
+export function QRcode({ dataURI, label }) {
     return (
-        <div class="text-center border rounded">
+        <div className="col text-center">
             <img
-            src={`./public/assets/qrcodes/${label}.png`} 
-            alt={`${label}`}
+            src={dataURI} 
+            alt={label}
             width="150" 
             />
             <p>{label}</p>
